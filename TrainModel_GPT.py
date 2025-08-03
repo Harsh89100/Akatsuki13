@@ -47,6 +47,8 @@ for img_file in val_images:
     img_path = os.path.join(VAL_IMAGES_DIR, img_file)
     model.predict(img_path, save=True, show=True)
 
-# --- Export Model to ONNX ---
-print("\n--- Exporting Model to ONNX ---")
-model.export(format="onnx")
+# --OPTIONAL--
+# --- Export Model to ONNX --- 
+# print("\n--- Exporting Model to ONNX ---")
+# model.export(format="onnx")
+
