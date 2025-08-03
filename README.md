@@ -9,9 +9,13 @@ This project implements an object detection system using the **YOLOv8** model to
 
 The dataset was synthetically generated using **FalconEditor** and follows the YOLO format:
 /HackByte_Dataset/
+
 ├── data/
+
 │ ├── train/
+
 │ │ ├── images/
+
 │ │ └── labels/
 │ ├── val/
 │ │ ├── images/
