@@ -1,5 +1,4 @@
 # Akatsuki13
-AI object detection model
 
 # 🚀 Space Station Object Detection using YOLOv8
 
@@ -17,9 +16,13 @@ The dataset was synthetically generated using **FalconEditor** and follows the Y
 │ │ ├── images/
 
 │ │ └── labels/
+
 │ ├── val/
+
 │ │ ├── images/
+
 │ │ └── labels/
+
 ├── yolo_params.yaml
 
 
