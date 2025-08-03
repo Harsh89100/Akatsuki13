@@ -57,7 +57,6 @@ You can install anything else with just:
 
 
 
-# 🧠 YOLOv8 Training Script Parameters Explained
 
 ---
 
@@ -132,6 +131,115 @@ This setup uses:
 This configuration is well-suited for diverse, synthetic datasets with object occlusion, lighting variation, and complex spatial relationships.
 
 ---
+
+# 📷 Real-Time Object Detection with YOLOv8 and Laptop Webcam (Anaconda + NVIDIA GPU)
+
+Step-by-step instructions to set up a Python environment using **Anaconda**, install **PyTorch with GPU support**, install **Ultralytics YOLOv8**, and run real-time object detection using your **trained YOLOv8 model** with a **laptop webcam**.
+
+---
+
+## ✅ Requirements
+
+- **Anaconda** installed: [https://www.anaconda.com/products/distribution](https://www.anaconda.com/products/distribution)
+- **NVIDIA GPU** with **CUDA support**
+- **Trained YOLOv8 model** (e.g., `best.pt`)
+
+---
+
+## 🧪 Step 1: Create Conda Environment
+
+```bash
+conda create -n yolov8_env python=3.10 -y
+conda activate yolov8_env
+```
+
+---
+
+## ⚙️ Step 2: Install PyTorch with CUDA (GPU Support)
+
+Visit the official PyTorch installation page: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+
+Example (for CUDA 11.8):
+
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+✅ Verify GPU is available:
+
+```bash
+python -c "import torch; print(torch.cuda.is_available())"
+```
+
+You should see: `True`
+
+---
+
+## 📦 Step 3: Install Ultralytics and OpenCV
+
+```bash
+pip install ultralytics opencv-python
+```
+
+
+---
+
+## 📁 Step 4: Organize Your Project Directory
+
+```
+project-directory/
+├── best.pt                  # Trained YOLOv8 model
+├── detect_webcam.py         # Real-time detection script
+```
+
+---
+
+
+
+
+
+---
+
+## 🚀 Step 5: Run the Script
+
+```bash
+python detect_webcam.py
+```
+
+Press `q` to quit the window.
+
+---
+
+## 🧼 Cleanup (Optional)
+
+If you want to remove the environment:
+
+```bash
+conda deactivate
+conda remove -n yolov8_env --all -y
+```
+
+---
+
+## 🧠 Tips
+
+- Ensure your `best.pt` file is exported after training your model with Ultralytics.
+- You can use a different webcam by changing the argument in `cv2.VideoCapture(0)` (e.g., 1, 2, ...).
+- If the webcam feed is laggy, consider reducing frame resolution before detection.
+
+---
+
+## 📚 References
+
+- [Ultralytics YOLOv8 Docs](https://docs.ultralytics.com)
+- [PyTorch Install Guide](https://pytorch.org/get-started/locally/)
+- [OpenCV Documentation](https://docs.opencv.org/)
+
+---
+
+Happy detecting! 🛰️
+
+
 
 
 
