@@ -34,6 +34,11 @@ The dataset was synthetically generated using **FalconEditor** and follows the Y
 
 We used **YOLOv8m** from the [Ultralytics](https://github.com/ultralytics/ultralytics) library, which provides a balanced trade-off between speed and accuracy.
 
+### Woriking in Colab
+Click below to acces a Colab notebook for training YOLO models. It makes training a custom YOLO model as easy as uploading an image dataset and running a few blocks of code.
+
+<a href="https://colab.research.google.com/drive/1uqmggmGkMwa2eB0H0kID77_l6EOKP-H2?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 ### ✅ YOLOv8 Training Parameters:
 
 
