@@ -39,16 +39,20 @@ Click below to acces a Colab notebook for training model.
 
 <a href="https://colab.research.google.com/drive/1uqmggmGkMwa2eB0H0kID77_l6EOKP-H2?usp=sharing" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-🚀 Why Training Models in Google Colab Is Easy:
-✅ 1. Free Access to Powerful Hardware (GPU & TPU)
-Google Colab gives you free access to NVIDIA GPUs (like Tesla T4 or A100) — without needing your own high-end machine.
-✅ 2. Easy Integration with Google Drive
-You can load datasets and save model checkpoints directly to/from Google Drive.
-✅ 5. Pre-installed ML Libraries
-Libraries like PyTorch, TensorFlow, OpenCV, etc. are already installed.
-You can install anything else with just !pip install.
+### 🚀 Why Training Models in Google Colab Is Easy:
 
-### ✅ YOLOv8 Training Parameters:
+#### ✅ 1. Free Access to Powerful Hardware (GPU & TPU)
+Google Colab gives you **free access to NVIDIA GPUs** (like Tesla T4 or A100) — without needing your own high-end machine.
+
+###$ ✅ 2. Easy Integration with Google Drive
+You can load datasets and save model checkpoints directly to/from **Google Drive**.
+
+#### ✅ 5. Pre-installed ML Libraries
+Libraries like **PyTorch, TensorFlow, OpenCV**, etc. are already installed.  
+You can install anything else with just:
+
+```python
+!pip install your-library-name
 
 
 EPOCHS = 40
